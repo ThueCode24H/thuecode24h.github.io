@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
-import { setAccount, loginAccount } from "../../redux/actions/accountActions";
+import { signupAccount, loginAccount } from "../../redux/actions/accountActions";
 
 const AccountForm = () => {
   const dispatch = useDispatch();
@@ -13,8 +13,7 @@ const AccountForm = () => {
   };
 
   const handleRegister = () => {
-    dispatch(setAccount(formData));
-    alert("Đăng ký thành công!");
+    dispatch(signupAccount(formData));
   };
 
   const handleLogin = () => {
