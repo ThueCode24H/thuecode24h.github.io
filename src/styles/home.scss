@@ -1,0 +1,112 @@
+.brand {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+
+    .brand_logo {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        .brand_logo-img {
+            animation: 1s ease-in fadeIn;
+
+            width: 60%;
+        }
+
+    }
+
+    .brand_slogan {
+        text-align: justify;
+        margin: 8px;
+        font-size: 30px;
+        font-weight: 600;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        animation: 1s ease-in fadeIn;
+
+    }
+
+    .brand_summary {
+        position: absolute;
+        bottom: 0;
+        text-align: justify;
+        margin: 16px;
+        animation: 1s ease-in fadeIn;
+
+    }
+}
+
+.item_carousel {
+    min-height: 900px;
+    background-color: aquamarine;
+    border-radius: 2% 2% 2% 0;
+    position: relative;
+    padding: 0 !important;
+    overflow: hidden;
+    animation: 1s ease-in fadeIn;
+
+    &::before {
+        content: "";
+        width: 0;
+        height: 0;
+        border-bottom: 230px solid white;
+        border-right: 180px solid transparent;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+    }
+
+    .img_carousel {
+        width: 100%;
+        height: 100%;
+        background-repeat: no-repeat;
+        background-size: cover;
+
+    }
+}
+
+
+.contact_container {
+    position: relative;
+
+    .contact_wrapper {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        display: flex;
+        justify-content: space-between;
+        gap: 10px;
+        align-items: center;
+        margin: 8px 16px;
+
+        .contact_icon {
+            border-radius: 20px;
+            width: 40px;
+            height: 40px;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: background-color 0.25s ease-in-out;
+            animation: 1s ease-in fadeIn;
+
+            &:hover {
+                background-color: #eeeeee;
+
+            }
+        }
+    }
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
