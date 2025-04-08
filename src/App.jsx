@@ -1,4 +1,3 @@
-
 import AccountForm from "~/components/accounts/AccountForm";
 import Header from './components/layout/header/Header';
 import { Route, Routes } from "react-router";
