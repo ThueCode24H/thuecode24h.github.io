@@ -1,8 +1,32 @@
 .carousel {
     position: absolute !important;
+    right: 00px;
     top: 50%;
-    right: 50px;
+    overflow: hidden;
+    height: 330px;
+    width: 510px;
     transform: translate(0, -50%);
     display: flex;
-    gap: 20px;
+}
+
+.carousel-item {
+    margin-right: -50% !important;
+}
+
+.custom-slide {
+    transition: all 0.5s ease;
+}
+
+.active-slide {
+    transform: scale(1.1);
+    filter: none;
+    opacity: 1;
+    z-index: 1;
+}
+
+.blur-slide {
+    transform: scale(1);
+    filter: blur(1px);
+    opacity: 0.8;
+    z-index: 0;
 }

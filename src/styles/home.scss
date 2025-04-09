@@ -40,13 +40,12 @@
 }
 
 .item_carousel {
-    min-height: 900px;
+    min-height: 808px;
     background-color: aquamarine;
     border-radius: 2% 2% 2% 0;
     position: relative;
     padding: 0 !important;
     overflow: hidden;
-    animation: 1s ease-in fadeIn;
 
     &::before {
         content: "";
